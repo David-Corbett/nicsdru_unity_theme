@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NICS unity theme style guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">NICS unity theme style guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-base.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-layout.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Layout</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-components.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Components / modules</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-init.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Initialization partial</span>
+        </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables">
+                <span class="kss-nav__ref ">4.1</span
+                ><span class="kss-nav__name">Variables</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables-typography-the-default-font-family">
+                <span class="kss-nav__ref kss-nav__ref-child">4.1.1</span
+                ><span class="kss-nav__name">Font faces, stacks and sizes.</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-colors">
+                <span class="kss-nav__ref ">4.2</span
+                ><span class="kss-nav__name">Colors</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-libraries">
+                <span class="kss-nav__ref ">4.3</span
+                ><span class="kss-nav__name">3rd party libraries</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-mixins">
+                <span class="kss-nav__ref ">4.4</span
+                ><span class="kss-nav__name">Mixins</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-functions">
+                <span class="kss-nav__ref ">4.5</span
+                ><span class="kss-nav__name">Functions</span>
+              </a>
+            </li>
+                    </ul>
+              </li>
+        </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="content">
+<article>
+
+  
+          <div id="kssref-init" class="kss-section kss-section--depth-1 is-fullscreen">
+      <div class="kss-style">
+                <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-init">
+            <span class="kss-title__ref">
+              4
+              <span class="kss-title__permalink-hash">
+                init
+              </span>
+            </span>
+            Initialization partial
+          </a>
+        </h1>
+
+        
+                  <div class="kss-description">
+            <p>To make it easier to use all variables and mixins in any Sass file in this
+project, each .scss file has a <code>@import 'init';</code> declaration. The _init.scss
+file is in charge of importing all the other partials needed for the
+project.</p>
+<p>The initialization partial is organized in this way:</p>
+<ul>
+<li>First we set any shared Sass variables.</li>
+<li>Next we import Sass modules.</li>
+<li>Last we define our custom functions and mixins for this project.</li>
+</ul>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_index.scss</code>, line 1
+        </div>
+          </div>
+  </article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+[object Object]
+</body>
+</html>

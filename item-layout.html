@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NICS unity theme style guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">NICS unity theme style guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-base.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-layout.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Layout</span>
+        </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-header">
+                <span class="kss-nav__ref ">2.1</span
+                ><span class="kss-nav__name">Header</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-container">
+                <span class="kss-nav__ref ">2.2</span
+                ><span class="kss-nav__name">Container</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-regions">
+                <span class="kss-nav__ref ">2.3</span
+                ><span class="kss-nav__name">Regions</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-layout.html#kssref-layout-footer">
+                <span class="kss-nav__ref ">2.4</span
+                ><span class="kss-nav__name">Footer</span>
+              </a>
+            </li>
+                    </ul>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-components.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Components / modules</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-init.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Initialization partial</span>
+        </a>
+              </li>
+        </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="content">
+<article>
+
+  
+          <div id="kssref-layout" class="kss-section kss-section--depth-1 is-fullscreen">
+      <div class="kss-style">
+                <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-layout">
+            <span class="kss-title__ref">
+              2
+              <span class="kss-title__permalink-hash">
+                layout
+              </span>
+            </span>
+            Layout
+          </a>
+        </h1>
+
+                  <p class="kss-toolbar">
+                        <a href="#kssref-layout" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-layout" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+        
+                  <div class="kss-description">
+            <p>The theme provides a number of Drupal 'regions' namely:-</p>
+<ul>
+<li>header: 'Site branding'</li>
+<li>search: 'Search'</li>
+<li>primary_menu: 'Main menu'</li>
+<li>slideshow: 'Slideshow'</li>
+<li>front_welcome: 'Front welcome'</li>
+<li>top_first: 'First top'</li>
+<li>top_second: 'Second top'</li>
+<li>top_third: 'Third top'</li>
+<li>breadcrumb: 'Breadcrumb'</li>
+<li>sidebar_first: 'First sidebar'</li>
+<li>sidebar_second: 'Sidebar second'</li>
+<li>content: 'Content'</li>
+<li>bottom_widget_1: 'Bottom widget 1'</li>
+<li>bottom_widget_2: 'Bottom widget 2'</li>
+<li>bottom_widget_3: 'Bottom widget 3'</li>
+<li>footer_first: 'First Bottom'</li>
+<li>footer_second: 'Second Bottom'</li>
+<li>footer_third: 'Third Bottom'</li>
+<li>footer_fourth: 'Fourth Bottom'</li>
+<li>footer: 'Footer Bottom'</li>
+</ul>
+<p>Code in the src/scss/layout directory of the theme primarily facilitates structuring and placement of these Drupal
+regions on a given page. Demonstration templates are provided below. Some regions are configured to only render on
+the front page of the site (these are outlined further in the documentation in the regions section of this page.
+Note that a Drupal region will only render if there is some code / markup in the region for Drupal to output.
+<a href="https://www.drupal.org/node/1576530">See here for more information on Drupal regions.</a></p>
+
+          </div>
+        
+        
+              </div>
+
+              <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Examples          </div>
+
+                      <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
+          
+          <div class="kss-modifier__example">
+            
+  <div class="no-sidebars">
+  <div id="header_wrapper">
+    <div id="inner_header_wrapper">
+      <header id="header">
+        <div class="top_left">
+          <div class="kss-layout-block">The site branding region.</div>
+        </div>
+        <div id="headerHero" class="top_right with-menu with-search">
+          <div class="kss-layout-block">The search region.</div>
+          <button class="burger-toggle collapse" type="button" data-toggle="collapse" data-target=".main-menu">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="clear"></div>
+      </header>
+    </div>
+    <div class="kss-layout-block">The main menu region.</div>
+  </div>
+    <div id="container">
+    <div class="container-wrap">
+      <div class="content-sidebar-wrap">
+        <div id="content">
+          <div class="kss-layout-block">The breadcrumb region</div>
+          <main id="post-content">
+            <div class="kss-layout-block">The content region</div>
+          </main>
+        </div>
+              </div>
+                </div>
+  </div>
+  <div id="footer">
+    <div id="footer_wrapper">
+        <div id="footer-area" class="footer-area clearfix">
+          <div class="column kss-layout-block">The footer first region</div>
+          <div class="column kss-layout-block">The footer second region</div>
+          <div class="column kss-layout-block">The footer third region</div>
+          <div class="column kss-layout-block">The footer fourth region </div>
+        </div>
+        <div class="footer_credit kss-layout-block">The footer bottom region</div>
+    </div>
+  </div>
+</div>
+
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+                      <div class="kss-modifier__name kss-style">
+              .two-sidebars
+            </div>
+            <div class="kss-modifier__description kss-style">
+              A two sidebar layout where there is a column on the left and right sides.
+            </div>
+            <div class="kss-modifier__example">
+              
+<div class="two-sidebars">
+  <div id="header_wrapper">
+    <div id="inner_header_wrapper">
+      <header id="header">
+        <div class="top_left">
+          <div class="kss-layout-block">The site branding region.</div>
+        </div>
+        <div id="headerHero" class="top_right with-menu with-search">
+          <div class="kss-layout-block">The search region.</div>
+          <button class="burger-toggle collapse" type="button" data-toggle="collapse" data-target=".main-menu">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="clear"></div>
+      </header>
+    </div>
+    <div class="kss-layout-block">The main menu region.</div>
+  </div>
+    <div id="container">
+    <div class="container-wrap">
+      <div class="content-sidebar-wrap">
+        <div id="content">
+          <div class="kss-layout-block">The breadcrumb region</div>
+          <main id="post-content">
+            <div class="kss-layout-block">The content region</div>
+          </main>
+        </div>
+                  <aside id="sidebar-first"><div class="kss-layout-block">The sidebar first region</div></aside>
+              </div>
+              <aside id="sidebar-second"><div class="kss-layout-block">The sidebar second region</div></aside>
+                </div>
+  </div>
+  <div id="footer">
+    <div id="footer_wrapper">
+        <div id="footer-area" class="footer-area clearfix">
+          <div class="column kss-layout-block">The footer first region</div>
+          <div class="column kss-layout-block">The footer second region</div>
+          <div class="column kss-layout-block">The footer third region</div>
+          <div class="column kss-layout-block">The footer fourth region </div>
+        </div>
+        <div class="footer_credit kss-layout-block">The footer bottom region</div>
+    </div>
+  </div>
+</div>
+
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+                      <div class="kss-modifier__name kss-style">
+              .one-sidebar.sidebar-first
+            </div>
+            <div class="kss-modifier__description kss-style">
+              A one sidebar layout where the column comes first or left of the main content.
+            </div>
+            <div class="kss-modifier__example">
+              
+<div class="one-sidebar sidebar-first">
+  <div id="header_wrapper">
+    <div id="inner_header_wrapper">
+      <header id="header">
+        <div class="top_left">
+          <div class="kss-layout-block">The site branding region.</div>
+        </div>
+        <div id="headerHero" class="top_right with-menu with-search">
+          <div class="kss-layout-block">The search region.</div>
+          <button class="burger-toggle collapse" type="button" data-toggle="collapse" data-target=".main-menu">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="clear"></div>
+      </header>
+    </div>
+    <div class="kss-layout-block">The main menu region.</div>
+  </div>
+    <div id="container">
+    <div class="container-wrap">
+      <div class="content-sidebar-wrap">
+        <div id="content">
+          <div class="kss-layout-block">The breadcrumb region</div>
+          <main id="post-content">
+            <div class="kss-layout-block">The content region</div>
+          </main>
+        </div>
+                  <aside id="sidebar-first"><div class="kss-layout-block">The sidebar first region</div></aside>
+              </div>
+                </div>
+  </div>
+  <div id="footer">
+    <div id="footer_wrapper">
+        <div id="footer-area" class="footer-area clearfix">
+          <div class="column kss-layout-block">The footer first region</div>
+          <div class="column kss-layout-block">The footer second region</div>
+          <div class="column kss-layout-block">The footer third region</div>
+          <div class="column kss-layout-block">The footer fourth region </div>
+        </div>
+        <div class="footer_credit kss-layout-block">The footer bottom region</div>
+    </div>
+  </div>
+</div>
+
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+                      <div class="kss-modifier__name kss-style">
+              .one-sidebar.sidebar-second
+            </div>
+            <div class="kss-modifier__description kss-style">
+              A one sidebar layout where the column comes after or right of the main content.
+            </div>
+            <div class="kss-modifier__example">
+              
+<div class="one-sidebar sidebar-second">
+  <div id="header_wrapper">
+    <div id="inner_header_wrapper">
+      <header id="header">
+        <div class="top_left">
+          <div class="kss-layout-block">The site branding region.</div>
+        </div>
+        <div id="headerHero" class="top_right with-menu with-search">
+          <div class="kss-layout-block">The search region.</div>
+          <button class="burger-toggle collapse" type="button" data-toggle="collapse" data-target=".main-menu">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="clear"></div>
+      </header>
+    </div>
+    <div class="kss-layout-block">The main menu region.</div>
+  </div>
+    <div id="container">
+    <div class="container-wrap">
+      <div class="content-sidebar-wrap">
+        <div id="content">
+          <div class="kss-layout-block">The breadcrumb region</div>
+          <main id="post-content">
+            <div class="kss-layout-block">The content region</div>
+          </main>
+        </div>
+              </div>
+              <aside id="sidebar-second"><div class="kss-layout-block">The sidebar second region</div></aside>
+                </div>
+  </div>
+  <div id="footer">
+    <div id="footer_wrapper">
+        <div id="footer-area" class="footer-area clearfix">
+          <div class="column kss-layout-block">The footer first region</div>
+          <div class="column kss-layout-block">The footer second region</div>
+          <div class="column kss-layout-block">The footer third region</div>
+          <div class="column kss-layout-block">The footer fourth region </div>
+        </div>
+        <div class="footer_credit kss-layout-block">The footer bottom region</div>
+    </div>
+  </div>
+</div>
+
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+                      <div class="kss-modifier__name kss-style">
+              .front
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Shows regions that are available only the front page.
+            </div>
+            <div class="kss-modifier__example">
+              
+<div class="front two-sidebars">
+  <div id="header_wrapper">
+    <div id="inner_header_wrapper">
+      <header id="header">
+        <div class="top_left">
+          <div class="kss-layout-block">The site branding region.</div>
+        </div>
+        <div id="headerHero" class="top_right with-menu with-search">
+          <div class="kss-layout-block">The search region.</div>
+          <button class="burger-toggle collapse" type="button" data-toggle="collapse" data-target=".main-menu">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="clear"></div>
+      </header>
+    </div>
+    <div class="kss-layout-block">The main menu region.</div>
+  </div>
+      <div class="kss-layout-block">The slideshow region.</div>
+    <div class="kss-layout-block">The front welcome region.</div>
+    <div id="top-area" class="clearfix">
+      <div class="column kss-layout-block">The first top region.</div>
+      <div class="column kss-layout-block">The second top region</div>
+      <div class="column kss-layout-block">The third top region</div>
+    </div>
+    <div id="container">
+    <div class="container-wrap">
+      <div class="content-sidebar-wrap">
+        <div id="content">
+          <div class="kss-layout-block">The breadcrumb region</div>
+          <main id="post-content">
+            <div class="kss-layout-block">The content region</div>
+          </main>
+        </div>
+                  <aside id="sidebar-first"><div class="kss-layout-block">The sidebar first region</div></aside>
+              </div>
+              <aside id="sidebar-second"><div class="kss-layout-block">The sidebar second region</div></aside>
+                    <div id="bottom_wrapper" class="footer_block bottom_widget">
+          <div id="bottom-area" class="footer-area clearfix">
+            <div class="column kss-layout-block">The bottom widget 1 region.</div>
+            <div class="column kss-layout-block">The bottom widget 2 region.</div>
+            <div class="column kss-layout-block">The bottom widget 3 region.</div>
+          </div>
+        </div>
+          </div>
+  </div>
+  <div id="footer">
+    <div id="footer_wrapper">
+        <div id="footer-area" class="footer-area clearfix">
+          <div class="column kss-layout-block">The footer first region</div>
+          <div class="column kss-layout-block">The footer second region</div>
+          <div class="column kss-layout-block">The footer third region</div>
+          <div class="column kss-layout-block">The footer fourth region </div>
+        </div>
+        <div class="footer_credit kss-layout-block">The footer bottom region</div>
+    </div>
+  </div>
+</div>
+
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+                  </div>
+                  <details class="kss-markup kss-style">
+            <summary>
+                              Markup: <code>scss/2_layout/layout.twig</code>
+                          </summary>
+            <pre class="hljs"><code class="language-twig"><span class="hljs-comment">{# If there is no modifier set a default layout for a css grid so each grid item is 1 fr #}</span><span class="xml">
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> modifier_class is empty %}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">set</span></span> modifier_class = 'no-sidebars' %}</span><span class="xml">
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{modifier_class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> modifier_class == 'front' %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ 'two-sidebars' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"header_wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"inner_header_wrapper"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"top_left"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The site branding region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"headerHero"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"top_right with-menu with-search"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The search region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"burger-toggle collapse"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">".main-menu"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clear"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The main menu region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> modifier_class == 'front' %}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The slideshow region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The front welcome region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"top-area"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clearfix"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The first top region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The second top region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The third top region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-wrap"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-sidebar-wrap"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The breadcrumb region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"post-content"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The content region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> modifier_class == 'front' or modifier_class == 'two-sidebars' or modifier_class == 'one-sidebar sidebar-first' %}</span><span class="xml">
+          <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sidebar-first"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The sidebar first region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> modifier_class == 'front' or modifier_class == 'two-sidebars' or modifier_class == 'one-sidebar sidebar-second' %}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sidebar-second"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-layout-block"</span>&gt;</span>The sidebar second region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> modifier_class == 'front' %}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"bottom_wrapper"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer_block bottom_widget"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"bottom-area"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer-area clearfix"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The bottom widget 1 region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The bottom widget 2 region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The bottom widget 3 region.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"footer"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"footer_wrapper"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"footer-area"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer-area clearfix"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The footer first region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The footer second region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The footer third region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column kss-layout-block"</span>&gt;</span>The footer fourth region <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer_credit kss-layout-block"</span>&gt;</span>The footer bottom region<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span></code></pre>
+          </details>
+              
+              <div class="kss-source kss-style">
+          Source: <code>scss/2_layout/_index.scss</code>, line 6
+        </div>
+          </div>
+  </article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+[object Object]
+</body>
+</html>

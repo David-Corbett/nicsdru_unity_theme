@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NICS unity theme style guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">NICS unity theme style guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-base.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-layout.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Layout</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-components.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Components / modules</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-init.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Initialization partial</span>
+        </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables">
+                <span class="kss-nav__ref ">4.1</span
+                ><span class="kss-nav__name">Variables</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables-typography-the-default-font-family">
+                <span class="kss-nav__ref kss-nav__ref-child">4.1.1</span
+                ><span class="kss-nav__name">Font faces, stacks and sizes.</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-colors">
+                <span class="kss-nav__ref ">4.2</span
+                ><span class="kss-nav__name">Colors</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-libraries">
+                <span class="kss-nav__ref ">4.3</span
+                ><span class="kss-nav__name">3rd party libraries</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-mixins">
+                <span class="kss-nav__ref ">4.4</span
+                ><span class="kss-nav__name">Mixins</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-functions">
+                <span class="kss-nav__ref ">4.5</span
+                ><span class="kss-nav__name">Functions</span>
+              </a>
+            </li>
+                    </ul>
+              </li>
+        </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="content">
+<article>
+
+  
+          <div id="kssref-init" class="kss-section kss-section--depth-1 ">
+      <div class="kss-style">
+                <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-init">
+            <span class="kss-title__ref">
+              4
+              <span class="kss-title__permalink-hash">
+                init
+              </span>
+            </span>
+            Initialization partial
+          </a>
+        </h1>
+
+        
+                  <div class="kss-description">
+            <p>To make it easier to use all variables and mixins in any Sass file in this
+project, each .scss file has a <code>@import 'init';</code> declaration. The _init.scss
+file is in charge of importing all the other partials needed for the
+project.</p>
+<p>The initialization partial is organized in this way:</p>
+<ul>
+<li>First we set any shared Sass variables.</li>
+<li>Next we import Sass modules.</li>
+<li>Last we define our custom functions and mixins for this project.</li>
+</ul>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_index.scss</code>, line 1
+        </div>
+          </div>
+          <section id="kssref-init-variables" class="kss-section kss-section--depth-2 ">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-init-variables">
+            <span class="kss-title__ref">
+              4.1
+              <span class="kss-title__permalink-hash">
+                init.variables
+              </span>
+            </span>
+            Variables
+          </a>
+        </h2>
+
+        
+                  <div class="kss-description">
+            <p>Set variables for this site. These can be overridden in the scss code later.</p>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_variables.scss</code>, line 1
+        </div>
+          </section>
+          <section id="kssref-init-variables-typography-the-default-font-family" class="kss-section kss-section--depth-3 ">
+      <div class="kss-style">
+                <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-init-variables-typography-the-default-font-family">
+            <span class="kss-title__ref">
+              4.1.1
+              <span class="kss-title__permalink-hash">
+                init.variables.typography The default font family
+              </span>
+            </span>
+            Font faces, stacks and sizes.
+          </a>
+        </h3>
+
+        
+                  <div class="kss-description">
+            <p>Font styling and line heights are controlled by the several variables that
+used by mixins like adjust-font-size-to().
+These variable and mixins are documented in <a href="http://compass-style.org/reference/compass/typography/vertical_rhythm/">Compass</a>.
+We also use a custom mixin responsive-typo-map() to make responsive typography much more manageable using sass maps.
+We import Google fonts in the head of the document and set the base family to be
+'Open Sans', sans-serif</p>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_typography.scss</code>, line 1
+        </div>
+          </section>
+          <section id="kssref-init-colors" class="kss-section kss-section--depth-2 ">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-init-colors">
+            <span class="kss-title__ref">
+              4.2
+              <span class="kss-title__permalink-hash">
+                init.colors
+              </span>
+            </span>
+            Colors
+          </a>
+        </h2>
+
+                  <p class="kss-toolbar">
+                          <a href="#kssref-init-colors" data-kss-fullscreen="kssref-init-colors">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-init-colors.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+                        <a href="#kssref-init-colors" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-init-colors" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+        
+                  <div class="kss-description">
+            <p>Use the <code>color()</code> function to add colors to CSS properties. To learn more,
+<a href="http://johnalbin.github.io/chroma/">read the Chroma documentation</a>.</p>
+
+          </div>
+        
+        
+              </div>
+
+              <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example          </div>
+
+          
+          <div class="kss-modifier__example">
+            <div class="kss-style"><h3 class="chroma-kss__title">branding</h3><p class="chroma-kss__description">The site's main colors. Can be used to define colors in other color schemes.</p><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #000"></span><code class="chroma-kss__variable">color(black)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#000</code></span> <span class="chroma-kss__reference">This color is inherited by: charcoal, grey, grey-dark, brand-secondary-dark, button-disabled</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #333333"></span><code class="chroma-kss__variable">color(charcoal)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#333333</code> (black)</span> <span class="chroma-kss__reference">This color is inherited by: brand-secondary-dark</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #cccccc"></span><code class="chroma-kss__variable">color(grey)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#cccccc</code> (black)</span> <span class="chroma-kss__reference">This color is inherited by: button-disabled</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #4d4d4d"></span><code class="chroma-kss__variable">color(grey-dark)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#4d4d4d</code> (black)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #e8e7e7"></span><code class="chroma-kss__variable">color(grey-light)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#e8e7e7</code></span> <span class="chroma-kss__reference">This color is inherited by: border</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #f0f0f0"></span><code class="chroma-kss__variable">color(grey-lightest)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#f0f0f0</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #cdcdcd"></span><code class="chroma-kss__variable">color(grey-medium)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#cdcdcd</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #fff"></span><code class="chroma-kss__variable">color(white)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#fff</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #f3f8fc"></span><code class="chroma-kss__variable">color(offwhite)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#f3f8fc</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #0f3d0f"></span><code class="chroma-kss__variable">color(brand-primary)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#0f3d0f</code></span> <span class="chroma-kss__reference">This color is inherited by: link, link-hover, link-active</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #076cba"></span><code class="chroma-kss__variable">color(brand-primary-dark)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#076cba</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #0a7ad0"></span><code class="chroma-kss__variable">color(brand-primary-medium)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#0a7ad0</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #cee4f6"></span><code class="chroma-kss__variable">color(brand-primary-light)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#cee4f6</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #f3f8fc"></span><code class="chroma-kss__variable">color(brand-primary-lightest)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#f3f8fc</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #606"></span><code class="chroma-kss__variable">color(brand-secondary)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#606</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #333333"></span><code class="chroma-kss__variable">color(brand-secondary-dark)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#333333</code> (charcoal)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #dd9c38"></span><code class="chroma-kss__variable">color(brand-tertiary)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#dd9c38</code></span></div><h3 class="chroma-kss__title">functional</h3><p class="chroma-kss__description">Colors used by functional parts of the design.</p><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #555"></span><code class="chroma-kss__variable">color(text)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#555</code></span> <span class="chroma-kss__reference">This color is inherited by: headings, button</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #555"></span><code class="chroma-kss__variable">color(headings)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#555</code> (text)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #0f3d0f"></span><code class="chroma-kss__variable">color(link)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#0f3d0f</code> (brand-primary)</span> <span class="chroma-kss__reference">This color is inherited by: link-hover, link-active</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #0f3d0f"></span><code class="chroma-kss__variable">color(link-hover)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#0f3d0f</code> (link)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #5e60b5"></span><code class="chroma-kss__variable">color(link-visited)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#5e60b5</code></span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #0f3d0f"></span><code class="chroma-kss__variable">color(link-active)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#0f3d0f</code> (link)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #e8e7e7"></span><code class="chroma-kss__variable">color(border)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#e8e7e7</code> (grey-light)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #555"></span><code class="chroma-kss__variable">color(button)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#555</code> (text)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #cccccc"></span><code class="chroma-kss__variable">color(button-disabled)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#cccccc</code> (grey)</span></div><div class="chroma-kss"><span class="chroma-kss__swatch" style="background-color: #ff0"></span><code class="chroma-kss__variable">color(mark-bg)</code> <span class="chroma-kss__alt-text">uses the color:</span> <span class="chroma-kss__value"><code>#ff0</code></span></div></div>
+
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+                  </div>
+                  <details class="kss-markup kss-style">
+            <summary>
+                              Markup: <code>scss/init/chroma.twig</code>
+                          </summary>
+            <pre class="hljs"><code class="language-twig"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"kss-style"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__title"</span>&gt;</span>branding<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__description"</span>&gt;</span>The site's main colors. Can be used to define colors in other color schemes.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #000"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(black)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#000<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__reference"</span>&gt;</span>This color is inherited by: charcoal, grey, grey-dark, brand-secondary-dark, button-disabled<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #333333"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(charcoal)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#333333<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (black)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__reference"</span>&gt;</span>This color is inherited by: brand-secondary-dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #cccccc"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(grey)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#cccccc<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (black)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__reference"</span>&gt;</span>This color is inherited by: button-disabled<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #4d4d4d"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(grey-dark)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#4d4d4d<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (black)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #e8e7e7"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(grey-light)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#e8e7e7<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__reference"</span>&gt;</span>This color is inherited by: border<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #f0f0f0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(grey-lightest)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#f0f0f0<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #cdcdcd"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(grey-medium)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#cdcdcd<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #fff"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(white)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#fff<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #f3f8fc"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(offwhite)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#f3f8fc<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #0f3d0f"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-primary)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#0f3d0f<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__reference"</span>&gt;</span>This color is inherited by: link, link-hover, link-active<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #076cba"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-primary-dark)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#076cba<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #0a7ad0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-primary-medium)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#0a7ad0<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #cee4f6"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-primary-light)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#cee4f6<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #f3f8fc"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-primary-lightest)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#f3f8fc<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #606"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-secondary)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#606<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #333333"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-secondary-dark)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#333333<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (charcoal)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #dd9c38"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(brand-tertiary)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#dd9c38<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__title"</span>&gt;</span>functional<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__description"</span>&gt;</span>Colors used by functional parts of the design.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #555"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(text)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#555<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__reference"</span>&gt;</span>This color is inherited by: headings, button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #555"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(headings)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#555<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (text)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #0f3d0f"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(link)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#0f3d0f<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (brand-primary)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__reference"</span>&gt;</span>This color is inherited by: link-hover, link-active<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #0f3d0f"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(link-hover)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#0f3d0f<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (link)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #5e60b5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(link-visited)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#5e60b5<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #0f3d0f"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(link-active)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#0f3d0f<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (link)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #e8e7e7"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(border)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#e8e7e7<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (grey-light)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #555"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(button)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#555<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (text)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #cccccc"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(button-disabled)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#cccccc<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> (grey)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__swatch"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #ff0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__variable"</span>&gt;</span>color(mark-bg)<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__alt-text"</span>&gt;</span>uses the color:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chroma-kss__value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>#ff0<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span></code></pre>
+          </details>
+              
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_colors.scss</code>, line 3
+        </div>
+          </section>
+          <section id="kssref-init-libraries" class="kss-section kss-section--depth-2 ">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-init-libraries">
+            <span class="kss-title__ref">
+              4.3
+              <span class="kss-title__permalink-hash">
+                init.libraries
+              </span>
+            </span>
+            3rd party libraries
+          </a>
+        </h2>
+
+        
+                  <div class="kss-description">
+            <p>The following sass modules are shared with all .scss files:</p>
+<ul>
+<li><a href="http://breakpoint-sass.com/">Breakpoint</a></li>
+<li><a href="http://johnalbin.github.io/chroma/">Chroma-sass</a></li>
+<li><a href="http://compass-style.org/">Compass vertical rhythm</a>
+For compass we we only load vertical rhythm support
+Note that this is loaded in standalone files that are developed for node sass further information can be found
+@see https://github.com/Igosuki/compass-mixins</li>
+</ul>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_index.scss</code>, line 25
+        </div>
+          </section>
+          <section id="kssref-init-mixins" class="kss-section kss-section--depth-2 ">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-init-mixins">
+            <span class="kss-title__ref">
+              4.4
+              <span class="kss-title__permalink-hash">
+                init.mixins
+              </span>
+            </span>
+            Mixins
+          </a>
+        </h2>
+
+        
+                  <div class="kss-description">
+            <p>Custom mixins used on this site.</p>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_index.scss</code>, line 57
+        </div>
+          </section>
+          <section id="kssref-init-functions" class="kss-section kss-section--depth-2 ">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-init-functions">
+            <span class="kss-title__ref">
+              4.5
+              <span class="kss-title__permalink-hash">
+                init.functions
+              </span>
+            </span>
+            Functions
+          </a>
+        </h2>
+
+        
+                  <div class="kss-description">
+            <p>Custom functions used on this site. Custom functions are generally used across a number of NICS Drupal themes,
+therefore import these from the nicsdru_origins_theme via a node_module set up for that theme.</p>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/_index.scss</code>, line 44
+        </div>
+          </section>
+  </article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+[object Object]
+</body>
+</html>

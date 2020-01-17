@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NICS unity theme style guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">NICS unity theme style guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-base.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-base.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-layout.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Layout</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-layouts.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Layouts</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-components.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Components / modules</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-init.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Initialization partial</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-init.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Initialization partial</span>
+        </a>
+              </li>
+        </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="content">
+<article>
+
+  
+          <div id="kssref-init-mixins-responsive-typo-map" class="kss-section kss-section--depth-3 is-fullscreen">
+      <div class="kss-style">
+                <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-init-mixins-responsive-typo-map">
+            <span class="kss-title__ref">
+              5.4.1
+              <span class="kss-title__permalink-hash">
+                init.mixins.responsive-typo-map
+              </span>
+            </span>
+            responsive-typo-map()
+          </a>
+        </h3>
+
+        
+                  <div class="kss-description">
+            <p>A mixin to make responsive typography much more manageable.
+@see https://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/</p>
+<p>The mixin accepts a sass map with key-value pairs with breakpoints as keys and elements for setting vertical rhythm
+as corresponding values. The mixin checks to see whether the value of the key in the font-sizes map is a list
+as opposed to a font-size value. If it’s a list, then it gets the correct value from the list by index value,
+with the help of the nth function. It assumes that the first value is the font size, the second is the line height
+and a third is margin values. Finally the mixin integrates with compass vertical typography mixins to output values
+in appropriate rhythm units.</p>
+
+          </div>
+        
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/responsive-typo/_resp-typo.scss</code>, line 1
+        </div>
+          </div>
+  </article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+[object Object]
+</body>
+</html>
