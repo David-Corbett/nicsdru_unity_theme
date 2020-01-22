@@ -55,33 +55,45 @@
               </a>
             </li>
                       <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables-typography-the-default-font-family">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables-colors">
                 <span class="kss-nav__ref kss-nav__ref-child">4.1.1</span
-                ><span class="kss-nav__name">Font faces, stacks and sizes.</span>
-              </a>
-            </li>
-                      <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-colors">
-                <span class="kss-nav__ref ">4.2</span
                 ><span class="kss-nav__name">Colors</span>
               </a>
             </li>
                       <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables-breakpoints">
+                <span class="kss-nav__ref kss-nav__ref-child">4.1.2</span
+                ><span class="kss-nav__name">Breakpoint variables</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables-vertical-rhythm">
+                <span class="kss-nav__ref kss-nav__ref-child">4.1.3</span
+                ><span class="kss-nav__name">Vertical rhythm variables</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-variables-typography-the-default-font-family">
+                <span class="kss-nav__ref kss-nav__ref-child">4.1.4</span
+                ><span class="kss-nav__name">Font faces, stacks and sizes.</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-init.html#kssref-init-libraries">
-                <span class="kss-nav__ref ">4.3</span
+                <span class="kss-nav__ref ">4.2</span
                 ><span class="kss-nav__name">3rd party libraries</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-functions">
+                <span class="kss-nav__ref ">4.3</span
+                ><span class="kss-nav__name">Functions</span>
               </a>
             </li>
                       <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-init.html#kssref-init-mixins">
                 <span class="kss-nav__ref ">4.4</span
                 ><span class="kss-nav__name">Mixins</span>
-              </a>
-            </li>
-                      <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-functions">
-                <span class="kss-nav__ref ">4.5</span
-                ><span class="kss-nav__name">Functions</span>
               </a>
             </li>
                     </ul>
@@ -109,14 +121,13 @@
 
         
                   <div class="kss-description">
-            <p>To make it easier to use all variables and mixins in any Sass file in this
-project, each .scss file has a <code>@import 'init';</code> declaration. The _init.scss
-file is in charge of importing all the other partials needed for the
-project.</p>
+            <p>To make it easier to use all variables and mixins in any sass file in this project, each .scss file has a
+<code>@import 'init';</code> declaration. The init/_index.scss file is in charge of importing all the other partials needed for
+the project.</p>
 <p>The initialization partial is organized in this way:</p>
 <ul>
-<li>First we set any shared Sass variables.</li>
-<li>Next we import Sass modules.</li>
+<li>First we set any shared sass variables.</li>
+<li>Next we import third party sass modules / libraries.</li>
 <li>Last we define our custom functions and mixins for this project.</li>
 </ul>
 

@@ -55,28 +55,23 @@
 <article>
 
   
-          <div id="kssref-init-variables-typography-the-default-font-family" class="kss-section kss-section--depth-3 is-fullscreen">
+          <div id="kssref-init-variables-breakpoints" class="kss-section kss-section--depth-3 is-fullscreen">
       <div class="kss-style">
                 <h3 class="kss-title kss-title--level-3">
-          <a class="kss-title__permalink" href="#kssref-init-variables-typography-the-default-font-family">
+          <a class="kss-title__permalink" href="#kssref-init-variables-breakpoints">
             <span class="kss-title__ref">
-              4.1.4
+              4.1.2
               <span class="kss-title__permalink-hash">
-                init.variables.typography The default font family
+                init.variables.breakpoints
               </span>
             </span>
-            Font faces, stacks and sizes.
+            Breakpoint variables
           </a>
         </h3>
 
         
                   <div class="kss-description">
-            <p>Font styling and line heights are controlled by the several variables that are used by mixins like
-<code>adjust-font-size-to()</code>.
-These variable and mixins are documented in <a href="http://compass-style.org/reference/compass/typography/vertical_rhythm/">Compass</a>.
-We also use a custom mixin responsive-typo-map() to make responsive typography much more manageable using sass maps.
-We import Google fonts in the head of the document and set the base family to be
-'Open Sans', sans-serif</p>
+            <p>Set some values for where responsive changes occur - the values are set for use with <code>min-width</code> media queries.</p>
 
           </div>
         
@@ -84,45 +79,39 @@ We import Google fonts in the head of the document and set the base family to be
                               <div class="kss-parameters__title">Parameters:</div>
             <ul class="kss-parameters">
                       <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>$normal-text</code></div>
+              <div class="kss-parameters__name"><code>$mob</code></div>
               <div class="kss-parameters__description">
-                defines a responsive typography map for standard paragraph text in the document.
+                a mobile device view in landscape.
                               </div>
             </li>
                                         <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>$h1-text</code></div>
+              <div class="kss-parameters__name"><code>$phab</code></div>
               <div class="kss-parameters__description">
-                defines a responsive typography map for normal heading 1 text in the document.
+                a tablet sized device being viewed portrait;
                               </div>
             </li>
                                         <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>$h2-text</code></div>
+              <div class="kss-parameters__name"><code>$tab</code></div>
               <div class="kss-parameters__description">
-                defines a responsive typography map for normal heading 2 text in the document.
+                a tablet sized device being viewed landscape;
                               </div>
             </li>
                                         <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>$h3-text</code></div>
+              <div class="kss-parameters__name"><code>$lap</code></div>
               <div class="kss-parameters__description">
-                defines a responsive typography map for normal heading 3 text in the document.
+                a larger device with a smaller screen such as a laptop;
                               </div>
             </li>
                                         <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>$h4-text</code></div>
+              <div class="kss-parameters__name"><code>$desk</code></div>
               <div class="kss-parameters__description">
-                defines a responsive typography map for normal heading 4 text in the document.
+                a full sized screen, able to accommodate the largest sizes currently available;
                               </div>
             </li>
                                         <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>$h5-text</code></div>
+              <div class="kss-parameters__name"><code>$max-grid-width</code></div>
               <div class="kss-parameters__description">
-                defines a responsive typography map for normal heading 5 text in the document.
-                              </div>
-            </li>
-                                        <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>$h6-text</code></div>
-              <div class="kss-parameters__description">
-                defines a responsive typography map for normal heading 6 text in the document.
+                sets the maximum value the content area can expand to, on larger devices, the content container is centered on the page.
                               </div>
             </li>
                       </ul>
@@ -130,7 +119,7 @@ We import Google fonts in the head of the document and set the base family to be
 
       
               <div class="kss-source kss-style">
-          Source: <code>scss/init/_typography.scss</code>, line 1
+          Source: <code>scss/init/_variables.scss</code>, line 34
         </div>
           </div>
   </article>
