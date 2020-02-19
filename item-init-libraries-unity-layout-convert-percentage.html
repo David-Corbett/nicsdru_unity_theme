@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="kss-assets/kss.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<link rel="stylesheet" href="css/nicsdru-unity-theme-styleguide.css">
+<link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body id="kss-node" class="kss-fullscreen-mode">
@@ -34,13 +34,13 @@
         </a>
               </li>
           <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-components.html">
-          <span class="kss-nav__ref">2</span><span class="kss-nav__name">components</span>
+        <a class="kss-nav__menu-link" href="section-layout.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Layout</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-forms.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">forms</span>
+        <a class="kss-nav__menu-link" href="section-components.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Components / modules</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
@@ -55,24 +55,24 @@
 <article>
 
   
-          <div id="kssref-init-functions-import-init-helpers-strip-unit-" class="kss-section kss-section--depth-2 is-fullscreen">
+          <div id="kssref-init-libraries-unity-layout-convert-percentage" class="kss-section kss-section--depth-4 is-fullscreen">
       <div class="kss-style">
-                <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-init-functions-import-init-helpers-strip-unit-">
+                <h4 class="kss-title kss-title--level-4">
+          <a class="kss-title__permalink" href="#kssref-init-libraries-unity-layout-convert-percentage">
             <span class="kss-title__ref">
-              4.5
+              4.2.1.1
               <span class="kss-title__permalink-hash">
-                init.functions @import 'init/helpers/strip-unit';
+                init.libraries.unity-layout.convert-percentage
               </span>
             </span>
-            Functions
+            convert-percentage($value)
           </a>
-        </h2>
+        </h4>
 
         
                   <div class="kss-description">
-            <p>Custom functions used on this site. Custom functions are generally used across a number of NICS Drupal themes,
-therefore import these from the nicsdru_origins_theme via a node_module set up for that theme.</p>
+            <p>Check if $value variable is a valid integer or percentage value. If $value is an integer, but not a percentage
+then return a percentage value. If $value is neither an integer, nor a percentage, then return false.</p>
 
           </div>
         
@@ -81,7 +81,7 @@ therefore import these from the nicsdru_origins_theme via a node_module set up f
 
       
               <div class="kss-source kss-style">
-          Source: <code>scss/_init.scss</code>, line 45
+          Source: <code>scss/init/unity-layout/_unity-layout.scss</code>, line 1
         </div>
           </div>
   </article>

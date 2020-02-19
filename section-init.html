@@ -85,6 +85,12 @@
               </a>
             </li>
                       <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-init.html#kssref-init-libraries-unity-layout">
+                <span class="kss-nav__ref kss-nav__ref-child">4.2.1</span
+                ><span class="kss-nav__name">unity-layout($values)</span>
+              </a>
+            </li>
+                      <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-init.html#kssref-init-functions">
                 <span class="kss-nav__ref ">4.3</span
                 ><span class="kss-nav__name">Functions</span>
@@ -361,7 +367,7 @@ be declared using the $variable method.</p>
 
         
                   <div class="kss-description">
-            <p>Set some values that</p>
+            <p>Set some values that contribute to the compass modules for compiling values that create a consist vertical rhythm.</p>
 
           </div>
         
@@ -511,7 +517,7 @@ We import Google fonts in the head of the document and set the base family to be
 <li><a href="http://breakpoint-sass.com/">Breakpoint</a></li>
 <li><a href="http://johnalbin.github.io/chroma/">Chroma-sass</a></li>
 <li><a href="http://compass-style.org/">Compass vertical rhythm</a>
-For compass we we only load vertical rhythm support
+For compass we only load vertical rhythm support.
 Note that this is loaded in standalone files that are developed for node sass further information can be found
 @see https://github.com/Igosuki/compass-mixins</li>
 </ul>
@@ -524,6 +530,50 @@ Note that this is loaded in standalone files that are developed for node sass fu
       
               <div class="kss-source kss-style">
           Source: <code>scss/init/_index.scss</code>, line 25
+        </div>
+          </section>
+          <section id="kssref-init-libraries-unity-layout" class="kss-section kss-section--depth-3 ">
+      <div class="kss-style">
+                <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-init-libraries-unity-layout">
+            <span class="kss-title__ref">
+              4.2.1
+              <span class="kss-title__permalink-hash">
+                init.libraries.unity-layout
+              </span>
+            </span>
+            unity-layout($values)
+          </a>
+        </h3>
+
+        
+                  <div class="kss-description">
+            <p>Applies main layout widths based on the list of values passed in through a sass map variable.</p>
+<p>Two values should be inserted for a 2 column layout and three values for a 3 column layout. The values should be
+declared from left to right as you expect to view the layout, e.g. $values = 19%, 60%, 19% - the first value will
+represent sidebar-first, the second value content and the third sidebar-second.</p>
+<p>All values must be integers or rounded percentages. The sum of the values must not exceed 100.</p>
+
+          </div>
+        
+        
+                              <div class="kss-parameters__title">Parameters:</div>
+            <ul class="kss-parameters">
+                      <li class="kss-parameters__item">
+              <div class="kss-parameters__name"><code>$values</code></div>
+              <div class="kss-parameters__description">
+                width values
+                                  <div class="kss-parameters__default-value">
+                    Defaults to: <code>19%, 60%, 19%</code>
+                  </div>
+                              </div>
+            </li>
+                      </ul>
+                        </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>scss/init/unity-layout/_unity-layout.scss</code>, line 47
         </div>
           </section>
           <section id="kssref-init-functions" class="kss-section kss-section--depth-2 ">
@@ -580,7 +630,7 @@ therefore import these from the nicsdru_origins_theme via a node_module set up f
 
       
               <div class="kss-source kss-style">
-          Source: <code>scss/init/_index.scss</code>, line 57
+          Source: <code>scss/init/_index.scss</code>, line 56
         </div>
           </section>
   </article>

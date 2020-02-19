@@ -772,5 +772,6 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
   padding: 10px;
 }
 
+@import 'drupal_stable_rules_kss';
 @import '../../../node_modules/chroma-sass/sass/chroma/kss';
 @include chroma-kss-styles();

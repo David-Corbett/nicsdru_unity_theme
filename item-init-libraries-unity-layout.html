@@ -40,17 +40,12 @@
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-components.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">components</span>
-        </a>
-              </li>
-          <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-forms.html">
-          <span class="kss-nav__ref">4</span><span class="kss-nav__name">forms</span>
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Components / modules</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-init.html">
-          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Initialization partial</span>
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Initialization partial</span>
         </a>
               </li>
         </ul>
@@ -60,34 +55,48 @@
 <article>
 
   
-          <div id="kssref-forms-base" class="kss-section kss-section--depth-2 is-fullscreen">
+          <div id="kssref-init-libraries-unity-layout" class="kss-section kss-section--depth-3 is-fullscreen">
       <div class="kss-style">
-                <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-forms-base">
+                <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-init-libraries-unity-layout">
             <span class="kss-title__ref">
-              4.1
+              4.2.1
               <span class="kss-title__permalink-hash">
-                forms.base
+                init.libraries.unity-layout
               </span>
             </span>
-            Form defaults
+            unity-layout($values)
           </a>
-        </h2>
+        </h3>
 
         
                   <div class="kss-description">
-            <p>These are the default base styles applied to HTML form elements.</p>
-<p>Component classes can override these styles, but if no class applies a style
-to an HTML form element, these styles will be the ones displayed.</p>
+            <p>Applies main layout widths based on the list of values passed in through a sass map variable.</p>
+<p>Two values should be inserted for a 2 column layout and three values for a 3 column layout. The values should be
+declared from left to right as you expect to view the layout, e.g. $values = 19%, 60%, 19% - the first value will
+represent sidebar-first, the second value content and the third sidebar-second.</p>
+<p>All values must be integers or rounded percentages. The sum of the values must not exceed 100.</p>
 
           </div>
         
         
-              </div>
+                              <div class="kss-parameters__title">Parameters:</div>
+            <ul class="kss-parameters">
+                      <li class="kss-parameters__item">
+              <div class="kss-parameters__name"><code>$values</code></div>
+              <div class="kss-parameters__description">
+                width values
+                                  <div class="kss-parameters__default-value">
+                    Defaults to: <code>19%, 60%, 19%</code>
+                  </div>
+                              </div>
+            </li>
+                      </ul>
+                        </div>
 
       
               <div class="kss-source kss-style">
-          Source: <code>scss/1_base/_forms.scss</code>, line 1
+          Source: <code>scss/init/unity-layout/_unity-layout.scss</code>, line 47
         </div>
           </div>
   </article>
