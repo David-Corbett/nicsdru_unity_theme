@@ -1,34 +1,27 @@
-name: NICS Unity Theme
+name: New Unity Theme
 type: theme
 description: 'Base theme for Drupal 8 sites'
 package: NICS
 core_version_requirement: ^8.8 || ^9
 
 libraries:
-  - nicsdru_unity_theme/unity-global-styling
-  - nicsdru_unity_theme/unity-fonts
-  - nicsdru_unity_theme/fontawesome
-  - nicsdru_unity_theme/eu-cookie-compliance
-  - nicsdru_unity_theme/media_library_styles
-  - nicsdru_unity_theme/responsive_images
-  - nicsdru_unity_theme/video
-  - nicsdru_unity_theme/social_links
-  - nicsdru_unity_theme/sidebar_menu
-  - nicsdru_unity_theme/field_label
-  - nicsdru_unity_theme/search_result
+  - nics_unity_theme/unity-global-styling
+  - nics_unity_theme/unity-fonts
+  - nics_unity_theme/fontawesome
+  - nics_unity_theme/eu-cookie-compliance
+  - nics_unity_theme/media_library_styles
+  - nics_unity_theme/responsive_images
+  - nics_unity_theme/video
+  - nics_unity_theme/social_links
+  - nics_unity_theme/sidebar_menu
+  - nics_unity_theme/field_label
+  - nics_unity_theme/search_result
 
 ckeditor_stylesheets:
   - css/3_components/ckeditor.css
   - css/3_components/content/responsive-images.css
   - css/3_components/content/responsive-images-ckeditor.css
   - css/3_components/content/icons-messages.css
-
-#libraries-override:
-#  core/modernizr: nicsdru_unity_theme/nicsdru-modernizr
-#  system/base:
-#    css:
-#      component:
-#        css/components/sticky-header.module.css: false
 
 base theme: stable
 

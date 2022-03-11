@@ -1,39 +1,39 @@
-nicsdru_unity_theme.base:
+nics_unity_theme.base:
   label: mobile
   mediaQuery: 'all and (min-width: 0px)'
   weight: 0
   multipliers:
     - 1x
     - 2x
-nicsdru_unity_theme.mobile:
+nics_unity_theme.mobile:
   label: phab
   mediaQuery: 'all and (min-width: 440px) and (max-width: 640px)'
   weight: 1
   multipliers:
     - 1x
     - 2x
-nicsdru_unity_theme.phab:
+nics_unity_theme.phab:
   label: tablet
   mediaQuery: 'all and (min-width: 641px) and (max-width: 765px)'
   weight: 2
   multipliers:
     - 1x
     - 2x
-nicsdru_unity_theme.tablet:
+nics_unity_theme.tablet:
   label: tablet
   mediaQuery: 'all and (min-width: 766px) and (max-width: 960px)'
   weight: 2
   multipliers:
     - 1x
     - 2x
-nicsdru_unity_theme.desk:
+nics_unity_theme.desk:
   label: desk
   mediaQuery: 'all and (min-width: 961px) and (max-width: 1152px)'
   weight: 3
   multipliers:
     - 1x
     - 2x
-nicsdru_unity_theme.wide:
+nics_unity_theme.wide:
   label: wide
   mediaQuery: 'all and (min-width: 1153px)'
   weight: 4

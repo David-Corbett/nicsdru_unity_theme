@@ -6,7 +6,7 @@
 
 /* eslint-disable */
 (function ($, Drupal) {
-  Drupal.behaviors.nicsdruAccordions = {
+  Drupal.behaviors.nicsAccordions = {
     attach: function attach (context) {
 
       $('.accordion', context).once('nicsdruAccordions').each(function(index) {

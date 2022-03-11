@@ -16,8 +16,8 @@ unity-global-styling:
     - core/jquery.once
 
 # This library provides styling for common admin interface components - the library is only loaded for
-# authenticated users and on the user login form - @see nicsdru_origins_theme.theme for processing functions
-nicsdru-authenticated-styles:
+# authenticated users and on the user login form - @see nics_origins_theme.theme for processing functions
+nics-authenticated-styles:
   version: VERSION
   css:
     theme:
@@ -25,7 +25,7 @@ nicsdru-authenticated-styles:
       css/drupal-diff.css: { minified: true, weight: -6 }
 
 # Provide a custom modernizer script
-nicsdru-modernizr:
+nics-modernizr:
   # Block the page from being loaded until Modernizr is initialized.
   header: true
   remote: https://github.com/Modernizr/Modernizr

@@ -1,6 +1,6 @@
 /* eslint-disable */
 (function ($, Drupal) {
-  Drupal.behaviors.nicsdruUnityMainMenu = {
+  Drupal.behaviors.nicsUnityMainMenu = {
     attach: function (context, settings) {
       $('#main-menu').find('.expanded .menu-link').once('has-submenu').each(function () {
 

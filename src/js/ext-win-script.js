@@ -9,7 +9,7 @@
 
 /* eslint-disable */
 (function ($, Drupal) {
-  Drupal.behaviors.nicsdruOriginsExtWin = {
+  Drupal.behaviors.nicsOriginsExtWin = {
     attach: function attach (context) {
       var $extLinkText = Drupal.t('external link opens in a new window / tab'),
         $intLinkText = Drupal.t('opens in a new window / tab');

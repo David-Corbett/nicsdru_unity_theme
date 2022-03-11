@@ -5,7 +5,7 @@
 
 // eslint-disable-next-line
 (function ($) {
-  Drupal.behaviors.nicsdruOriginsRemoveEmptyTags = {
+  Drupal.behaviors.nicsOriginsRemoveEmptyTags = {
     attach: function attach(context) {
       $('p', context)
         .once('emptyTags')

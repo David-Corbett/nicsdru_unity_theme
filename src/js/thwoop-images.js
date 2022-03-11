@@ -7,7 +7,7 @@
 
 /* eslint-disable */
 (function ($, Drupal) {
-  Drupal.behaviors.nicsdruOriginsThwoopImages = {
+  Drupal.behaviors.nicsOriginsThwoopImages = {
     attach: function attach (context) {
 
       // Make expandable responsive image styles thwoopable.

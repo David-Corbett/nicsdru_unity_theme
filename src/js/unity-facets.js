@@ -1,6 +1,6 @@
 /* eslint-disable */
 (function ($, Drupal) {
-  Drupal.behaviors.nicsdruUnityFacets = {
+  Drupal.behaviors.nicsUnityFacets = {
     attach: function attach(context) {
       // Add some progressive enhancement to the `.facet--title`.
       $('.facet--dropdown-links .facet--title', context).once('facetDropdown').each(function (index, widget) {
